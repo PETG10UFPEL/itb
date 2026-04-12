@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Activity,
@@ -1269,13 +1270,22 @@ export default function ITBPage() {
       {/* Hero */}
       <div className="bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 px-6 py-12 text-white">
         <div className="mx-auto max-w-4xl">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 backdrop-blur">
-              <Activity className="h-6 w-6 text-emerald-400" />
-            </div>
-            <div>
-              <div className="text-xs font-bold uppercase tracking-widest text-slate-400">Medicina Vascular Interativa</div>
-              <div className="text-xs text-slate-500">Simulação Clínica Educacional</div>
+          <div className="flex items-center gap-4 mb-4">
+            <Image
+              src="/img/logo.png"
+              alt="Logo do projeto"
+              width={56}
+              height={56}
+              className="rounded-2xl object-contain"
+            />
+            <div className="flex items-center gap-3">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 backdrop-blur">
+                <Activity className="h-6 w-6 text-emerald-400" />
+              </div>
+              <div>
+                <div className="text-xs font-bold uppercase tracking-widest text-slate-400">Medicina Vascular Interativa</div>
+                <div className="text-xs text-slate-500">Simulação Clínica Educacional</div>
+              </div>
             </div>
           </div>
           <h1 className="text-4xl font-black tracking-tight sm:text-5xl">
@@ -1343,7 +1353,14 @@ export default function ITBPage() {
       {/* Footer */}
       <div className="border-t border-slate-200 bg-white mt-8 px-6 py-6">
         <div className="mx-auto max-w-4xl flex flex-wrap items-center justify-between gap-4 text-xs text-slate-500">
-          <div>
+          <div className="flex items-center gap-3">
+            <Image
+              src="/img/logo.png"
+              alt="Logo do projeto"
+              width={32}
+              height={32}
+              className="rounded-lg object-contain"
+            />
             <strong className="text-slate-700">ITB Interactive</strong> — Material educacional de medicina vascular
           </div>
           <div className="flex gap-4">
