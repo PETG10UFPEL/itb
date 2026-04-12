@@ -1274,8 +1274,8 @@ export default function ITBPage() {
             <Image
               src="/img/logo.png"
               alt="Logo do projeto"
-              width={56}
-              height={56}
+              width={140}
+              height={140}
               className="rounded-2xl object-contain"
             />
             <div className="flex items-center gap-3">
@@ -1357,8 +1357,8 @@ export default function ITBPage() {
             <Image
               src="/img/logo.png"
               alt="Logo do projeto"
-              width={32}
-              height={32}
+              width={80}
+              height={80}
               className="rounded-lg object-contain"
             />
             <strong className="text-slate-700">ITB Interactive</strong> — Material educacional de medicina vascular
